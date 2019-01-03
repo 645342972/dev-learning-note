@@ -9,9 +9,24 @@
     :root{
         --background:#e4e4e4
     }
+    div :first-child{
+        background: var(--background);
+    }
+    div {
+        leading-height: 10px
+    }
+    .div {
+        --background:red;
+        color: var(--background)
+    }
     </style>
 </head>
 <body>
-    
+    <div>
+        这是一个div用来测试css变量
+    </div>
+    <div class="div">
+        这是一个div用来测试类变量
+    </div>
 </body>
 </html>
